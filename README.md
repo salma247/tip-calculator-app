@@ -5,6 +5,7 @@
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
+See the final result here: https://salma247.github.io/tip-calculator-app/
 
 ## The challenge
 
