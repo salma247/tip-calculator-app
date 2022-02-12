@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+  <div class="logo my-5 w-100 text-center">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+
+  <div class="tip-calculator container-fluid">
+    <div class="row justify-content-between">
+      <div class="part-one col-md-6 col-12">
+        <label for="bill-input">Bill</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="dollar"><img src="./images/icon-dollar.svg" alt="dollar icon"></span>
+          </div>
+          <input type="number" id="bill-input" class="form-control" placeholder="0" aria-label="bill"
+            aria-describedby="dollar">
+        </div>
+  
+        <label for="tip">Select Tip %</label>
+        <div class="tip container">
+          <div class="row justify-content-between">
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-5">5%</div>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-10">10%</div>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-15">15%</div>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-25">25%</div>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-50">50%</div>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+              <div class="tips py-2 tip-custom-container"><input type="number" id="tip-custom" placeholder="Custom"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="people-label">
+          <label for="people-input">Number of People</label>
+          <label class="error">Can't be zero</label>
+          <div class="input-group mb-3 people-input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="person"><img src="./images/icon-person.svg" alt="person icon"></span>
+            </div>
+            <input type="number" id="people-input" class="form-control" placeholder="1" aria-label="bill"
+              aria-describedby="person">
+          </div>
+        </div>
+      </div>
+      <div class="part-two col-md-5 col-12">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$0.00</div>
+        </div>
+  
+        <div class="total-amount">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="total" id="total-amount">$0.00</div>
+        </div>
+  
+        <button class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
